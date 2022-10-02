@@ -70,5 +70,246 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- <style>
+      @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+      html,
+      body,
+      #app {
+        height: 100%;
+      }
+      .container {
+        min-height: 100%;
+        padding: 30px;
+        font-family: 'PT Sans';
+        text-align: center;
+      }
+      .container h1 {
+        text-align: center;
+        color: #1569a8;
+      }
+      .container .btn {
+        display: inline-block;
+        margin-bottom: 20px;
+        border: 1px solid #1569a8;
+        background: white;
+        color: #1569a8;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        outline: none;
+      }
+      .container .btn:hover {
+        background: #1569a8;
+        color: white;
+        transition: 0.5s;
+      }
+      .accordion {
+        margin: 0 auto;
+        width: 80%;
+      }
+      .accordion .title {
+        padding: 30px 30px;
+        cursor: pointer;
+        transform: translate3d(0, 0, 0);
+        color: white;
+        position: relative;
+        font-size: 20px;
+        background: #1569a8;
+        margin-bottom: -1px;
+        border-bottom: 1px solid #0e4671;
+        text-align: left;
+      }
+      .accordion .title::after {
+        content: '+';
+        font-size: 18px;
+        color: white;
+        transition: transform 0.5s ease-in-out;
+        position: absolute;
+        right: 30px;
+        font-family: monospace;
+      }
+      .accordion .title.is-expanded {
+        transition: background 0.5s;
+        background: #0e4671;
+      }
+      .accordion .title.is-expanded::after {
+        content: '-';
+        transform: rotate(-360deg);
+      }
+      .accordion .content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s;
+        margin: 0;
+        padding: 0 30px;
+        border: solid 1px #eee;
+        border-top: 0;
+        background: #e8f4fc;
+      }
+      .accordion .content p {
+        padding: 30px 0;
+        margin: 0;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      .accordion .content.is-expanded {
+        max-height: 500px;
+        overflow: hidden;
+      }
+      .accordion .content.is-expanded p {
+        opacity: 1;
+      }
+      .accordion:after {
+        width: 100%;
+        height: 10px;
+        display: block;
+        background: #0e4671;
+        content: '';
+      }
+    </style>
+    <div class="container">
+      <div class="accordion">
+        <h1>FAQ</h1>
+        <button type="button" class="btn" id="expand-all">Expand All</button>
+        <button type="button" class="btn" id="collapse-all">
+          Collapse All
+        </button>
+        <div class="accordion-item">
+          <p class="title">First Question</p>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+              interdum diam. Donec interdum porttitor risus non bibendum.
+              Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo
+              purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim
+              arcu nec elit faucibus condimentum. Donec facilisis consectetur
+              enim sit amet varius. Pellentesque justo dui, sodales quis luctus
+              a, iaculis eget mauris. Aliquam dapibus, ante quis fringilla
+              feugiat, mauris risus condimentum massa, at elementum libero quam
+              ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut
+              lobortis aliquam. Nullam eu dolor venenatis mauris placerat
+              tristique eget id dolor. Quisque blandit adipiscing erat vitae
+              dapibus. Nulla aliquam magna nec elementum tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <p class="title">Second Question</p>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+              interdum diam. Donec interdum porttitor risus non bibendum.
+              Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo
+              purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim
+              arcu nec elit faucibus condimentum. Donec facilisis consectetur
+              enim sit amet varius. Pellentesque justo dui, sodales quis luctus
+              a, iaculis eget mauris. Aliquam dapibus, ante quis fringilla
+              feugiat, mauris risus condimentum massa, at elementum libero quam
+              ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut
+              lobortis aliquam. Nullam eu dolor venenatis mauris placerat
+              tristique eget id dolor. Quisque blandit adipiscing erat vitae
+              dapibus. Nulla aliquam magna nec elementum tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <p class="title">Third Question</p>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+              interdum diam. Donec interdum porttitor risus non bibendum.
+              Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo
+              purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim
+              arcu nec elit faucibus condimentum. Donec facilisis consectetur
+              enim sit amet varius. Pellentesque justo dui, sodales quis luctus
+              a, iaculis eget mauris. Aliquam dapibus, ante quis fringilla
+              feugiat, mauris risus condimentum massa, at elementum libero quam
+              ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut
+              lobortis aliquam. Nullam eu dolor venenatis mauris placerat
+              tristique eget id dolor. Quisque blandit adipiscing erat vitae
+              dapibus. Nulla aliquam magna nec elementum tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <p class="title">Furth Question</p>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+              interdum diam. Donec interdum porttitor risus non bibendum.
+              Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo
+              purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim
+              arcu nec elit faucibus condimentum. Donec facilisis consectetur
+              enim sit amet varius. Pellentesque justo dui, sodales quis luctus
+              a, iaculis eget mauris. Aliquam dapibus, ante quis fringilla
+              feugiat, mauris risus condimentum massa, at elementum libero quam
+              ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut
+              lobortis aliquam. Nullam eu dolor venenatis mauris placerat
+              tristique eget id dolor. Quisque blandit adipiscing erat vitae
+              dapibus. Nulla aliquam magna nec elementum tincidunt.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <p class="title">Fifth Question</p>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+              interdum diam. Donec interdum porttitor risus non bibendum.
+              Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo
+              purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim
+              arcu nec elit faucibus condimentum. Donec facilisis consectetur
+              enim sit amet varius. Pellentesque justo dui, sodales quis luctus
+              a, iaculis eget mauris. Aliquam dapibus, ante quis fringilla
+              feugiat, mauris risus condimentum massa, at elementum libero quam
+              ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut
+              lobortis aliquam. Nullam eu dolor venenatis mauris placerat
+              tristique eget id dolor. Quisque blandit adipiscing erat vitae
+              dapibus. Nulla aliquam magna nec elementum tincidunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const accordionItems = document.querySelectorAll('.accordion-item');
+
+      const buttonExpandAll = document.getElementById('expand-all');
+      const buttonCollapseAll = document.getElementById('collapse-all');
+
+      accordionItems.forEach(item =>
+        item.addEventListener('click', function ({ target }) {
+          if (target.classList.contains('title')) {
+            target.classList.toggle('is-expanded');
+            const content = this.querySelector('.content');
+            content.classList.toggle('is-expanded');
+          }
+        })
+      );
+
+      buttonExpandAll.addEventListener('click', function (e) {
+        e.preventDefault();
+        accordionItems.forEach(item => {
+          const title = item.querySelector('.title');
+          const content = item.querySelector('.content');
+
+          title.classList.add('is-expanded');
+          content.classList.add('is-expanded');
+        });
+      });
+
+      buttonCollapseAll.addEventListener('click', function (e) {
+        e.preventDefault();
+        accordionItems.forEach(item => {
+          const title = item.querySelector('.title');
+          const content = item.querySelector('.content');
+
+          title.classList.remove('is-expanded');
+          content.classList.remove('is-expanded');
+        });
+      });
+    </script> -->
   </body>
 </html>
