@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/practice_02/static/css/main.7acaea2f.css",
-    "main.js": "/practice_02/static/js/main.34fe926f.js",
-    "index.html": "/practice_02/index.html",
-    "main.7acaea2f.css.map": "/practice_02/static/css/main.7acaea2f.css.map",
-    "main.34fe926f.js.map": "/practice_02/static/js/main.34fe926f.js.map"
+    "main.css": "/react_practice_acordion/static/css/main.7acaea2f.css",
+    "main.js": "/react_practice_acordion/static/js/main.34fe926f.js",
+    "index.html": "/react_practice_acordion/index.html",
+    "main.7acaea2f.css.map": "/react_practice_acordion/static/css/main.7acaea2f.css.map",
+    "main.34fe926f.js.map": "/react_practice_acordion/static/js/main.34fe926f.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
